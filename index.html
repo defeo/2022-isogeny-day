@@ -1,0 +1,163 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>An Ordinary Day in Supersingularland – one day workshop on isogeny based crypto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      a:link, a:active, a:visited { color: #15d; }
+      body {
+	  font-family: mono, monospaced, courrier;
+	  font-size: 22px;
+	  max-width: 800px;
+	  margin: auto;
+	  margin-bottom: 4em;
+	  text-align: justify;
+      }
+      h1,h2,h3,h4 { color: #444; }
+      hr {
+	  border: dashed thin #444;
+	  margin: 30px 0;
+      }
+      ul {
+	  list-style-type: '- ';
+      }
+      @media(max-width:804px) {
+	  body {
+	      font-size: 18px;
+	      margin: 0 2px;
+	      text-align: left;
+	  }
+      }
+      .center { text-align: center }
+    </style>
+    
+    <meta name="twitter:title" content="An Ordinary Day in Supersingularland">
+    <meta property="og:title" content="An Ordinary Day in Supersingularland">
+    <meta name="twitter:card" content="summary">
+    <link rel="author" href="/"> 
+    <link rel="me" href="https://twitter.com/@luca_defeo">
+    <meta name="twitter:site" content="@luca_defeo">
+    <meta name="twitter:creator" content="@luca_defeo">
+    <meta name="description" content="July 7, 2022, Rüschlikon, Switzerland. A one day workshop on isogeny based crypto.">
+    <meta name="twitter:description" content="July 7, 2022, Rüschlikon, Switzerland. A one day workshop on isogeny based crypto.">
+    <meta property="og:description" content="July 7, 2022, Rüschlikon, Switzerland. A one day workshop on isogeny based crypto.">
+    <meta property="og:url" content="https://defeo.lu/2022-isogeny-day/">
+    <meta property="og:type" content="website">
+    
+  </head>
+  <body>
+    <h2># An Ordinary Day in Supersingularland<br>
+        <small><small>A one day workshop on isogeny based crypto</small></small></h2>
+    
+    <h3>## Summary</h3>
+    <ul>
+      <li><a href="#when">When? Where?</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#abstracts">Abstracts</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <hr>
+    
+    <h3 id="when">## When? Where?</h3>
+
+    <blockquote>
+      <p><strong>**Thursday July 7, 2022, 10am–5pm**</strong></p>
+      
+      <address>
+	<a target="_blank" href="https://www.zurich.ibm.com/">IBM Research Switzerland</a><br>
+	Säumerstrasse 4, 8803 Rüschlikon<br>
+	47.309820, 8.545411 – <a target="_blank" href="https://www.openstreetmap.org/?mlat=47.3095&mlon=8.5460#map=14/47.3095/8.5460&layers=T">See on a map</a>.
+      </address>
+    </blockquote>
+    
+    <hr>
+    
+    <h3 id="program">## Program</h3>
+
+    <table>
+      <tr>
+	<td></td>
+	<td>Ward Beullens</td>
+	<td>TBA</td>
+      </tr>
+      <tr>
+	<td></td>
+	<td>Luca De Feo</td>
+	<td>TBA</td>
+      </tr>
+      <tr>
+	<td colspan="3" class="center"><em>*lunch break*</em></td>
+      </tr>
+      <tr>
+	<td></td>
+	<td>Yi-Fu Lai</td>
+	<td><a href="#yi-fu">Attack on SHealS and HealS: the Second Wave of GPST</a></td>
+      </tr>
+      <tr>
+	<td></td>
+	<td>Boris Fouotsa</td>
+	<td><a href="#boris">New adaptive attack on SIDH</a></td>
+      </tr>
+      <tr>
+	<td></td>
+	<td>Simon-Philipp Merz</td>
+	<td></td>
+      </tr>
+    </table>
+    
+    <hr>
+    
+    <h3 id="abstracts">## Abstracts</h3>
+
+    <h4 id="yi-fu">### Attack on SHealS and HealS: the Second Wave of GPST</h4>
+
+    <p>An important problem is to have an efficient and secure
+      static-static key exchange protocol or public-key encryption
+      (PKE) from isogenies.  A static-static protocol enables
+      participants to execute the desired primitives without changing
+      the public keys from time to time.  This is possible using CSIDH
+      (AC'18) which, however, will fall prey to subexponential.  An
+      efficient protocol with a robust underlying assumption from
+      isogenies is still an open problem.</p>
+
+    <p>The main bottleneck for SIDH-family schemes to achieve the
+      static-static property boils down to the adaptive GPST attack
+      (AC'16). The attack enables malicious Bob to extract Alice’s
+      secret key bit by bit from each handshake and vice versa.  To
+      resolve this, Fouotsa and Petit (AC’21) presented SHealS and
+      HealS, a variant of SIDH, with a novel key validation mechanism
+      by using the commutativity of the isogeny diagram. It is claimed
+      that the work gives the static-static key exchange and PKE
+      solutions from isogenies that are immune to any adaptive
+      attacks.</p>
+
+    <p>In this talk, we present a variant of the GPST attack, aka the
+      second wave of GPST, that makes SHealS and HealS fall preys to
+      an adaptive attack again.</p>
+
+    <h4 href="boris">### New adaptive attack on SIDH</h4>
+
+    <hr>
+
+    <h3 id="faq">## FAQ</h3>
+
+    <h4>### How do I come to IBM?</h4>
+
+    <p>From Zürich HB, take line S4 to Rüschlikon, then walk up the
+      hill or take bus 165 to Rüschlikon, Säumerstrasse.</p>
+
+    <p>From Zürich Bürkliplatz, take bus 165 to Rüschlikon, Säumerstrasse.</p>
+
+    <h4>### What about lunch?</h4>
+
+    <p>IBM has a cafeteria where everyone can have lunch. Prices are
+      in the 10-15CHF range. You can pay by cash, card or Twint.</p>
+
+    <h4>### I want to prepare for the seminars, are there any recommended readings?</h4>
+
+    <p>Glad you asked, here are some suggestions...</p>
+</html>
