@@ -113,31 +113,30 @@
     
     <h3 id="abstracts">## Abstracts</h3>
 
-    <h4 id="yi-fu">### Attack on SHealS and HealS: the Second Wave of GPST</h4>
+    <h4 id="yi-fu">### Group Signatures and More from Isogenies (and
+      Lattices:) Generic, Simple, and Efficient</h4>
 
-    <p>An important problem is to have an efficient and secure
-      static-static key exchange protocol or public-key encryption
-      (PKE) from isogenies.  A static-static protocol enables
-      participants to execute the desired primitives without changing
-      the public keys from time to time.  This is possible using CSIDH
-      (AC'18) which, however, will fall prey to subexponential.  An
-      efficient protocol with a robust underlying assumption from
-      isogenies is still an open problem.</p>
+    <p>We construct an efficient dynamic group signature (or more
+      generally an accountable ring signature) from isogeny
+      assumptions. Our group signature is based on a simple generic
+      construction that can be instantiated by cryptographically hard
+      group actions such as the CSIDH group action. The signature is
+      of size <em>O(log N)</em>, where <em>N</em> is the number of
+      users in the group. Our idea builds on the recent efficient
+      OR-proof by Beullens, Katsumata, and Pintore (Asiacrypt'20),
+      where we efficiently add a proof of valid ciphertext to their
+      OR-proof and further show that the resulting non-interactive
+      zero-knowledge proof system is online extractable.</p>
 
-    <p>The main bottleneck for SIDH-family schemes to achieve the
-      static-static property boils down to the adaptive GPST attack
-      (AC'16). The attack enables malicious Bob to extract Alice’s
-      secret key bit by bit from each handshake and vice versa.  To
-      resolve this, Fouotsa and Petit (AC’21) presented SHealS and
-      HealS, a variant of SIDH, with a novel key validation mechanism
-      by using the commutativity of the isogeny diagram. It is claimed
-      that the work gives the static-static key exchange and PKE
-      solutions from isogenies that are immune to any adaptive
-      attacks.</p>
+    <p>Our group signatures satisfy more ideal security properties
+      compared to previously known constructions, while simultaneously
+      having an attractive signature size. The signature size of our
+      isogeny-based construction is an order of magnitude smaller than
+      all previously known post-quantum group signatures (e.g., 6.6 KB
+      for 64 members).</p>
 
-    <p>In this talk, we present a variant of the GPST attack, aka the
-      second wave of GPST, that makes SHealS and HealS fall preys to
-      an adaptive attack again.</p>
+    <p>Joint work with Ward Beullens, Samuel Dobson, Shuichi Katsumata
+      and Federico Pintore.</p>
 
     <h4 href="boris">### New adaptive attack on SIDH</h4>
 
