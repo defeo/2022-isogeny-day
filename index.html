@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>An Ordinary Day in Supersingularland – one day workshop on isogeny based crypto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base target="_blank">
     <style>
       a { text-decoration: none; }
       a:hover { text-decoration: underline; }
@@ -35,9 +36,10 @@
       table { border-collapse: collapse; } 
       tr:nth-child(even) { background-color: #eee; }
       td {
-	  padding: 0 10px;
+	  padding: 0 5px;
 	  text-align: left;
       }
+      .break { color: #444; }
     </style>
     
     <meta name="twitter:title" content="An Ordinary Day in Supersingularland">
@@ -60,10 +62,10 @@
     
     <h3>## Summary</h3>
     <ul>
-      <li><a href="#when">When? Where?</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#abstracts">Abstracts</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a target="_self" href="#when">When? Where?</a></li>
+      <li><a target="_self" href="#program">Program</a></li>
+      <li><a target="_self" href="#abstracts">Abstracts</a></li>
+      <li><a target="_self" href="#faq">FAQ</a></li>
     </ul>
 
     <hr>
@@ -71,12 +73,12 @@
     <h3 id="when">## When? Where?</h3>
 
     <blockquote>
-      <p><strong>**Thursday July 7, 2022, 10am–5pm**</strong></p>
+      <p><strong>**Thursday July 7, 2022, 11am–5pm**</strong></p>
       
       <address>
-	<a target="_blank" href="https://www.zurich.ibm.com/">IBM Research Switzerland</a><br>
+	<a href="https://www.zurich.ibm.com/">IBM Research Switzerland</a><br>
 	Säumerstrasse 4, 8803 Rüschlikon<br>
-	47.309820, 8.545411 – <a target="_blank" href="https://www.openstreetmap.org/?mlat=47.3095&mlon=8.5460#map=14/47.3095/8.5460&layers=T">See on a map</a>.
+	<a target="_self" href="geo:47.30974,8.54530?z=17">47.30974,8.54530</a> – <a href="https://www.openstreetmap.org/?mlat=47.30974&mlon=8.54530#map=17/47.30974/8.54530&layers=T">See on a map</a>.
       </address>
     </blockquote>
     
@@ -95,27 +97,27 @@
 	<td>Luca De Feo</td>
 	<td>Supersingular isogeny graphs, SIDH, etc.</td>
       </tr>
-      <tr>
+      <tr class="break">
 	<td colspan="3" class="center"><em>*lunch break*</em></td>
       </tr>
       <tr>
 	<td>13:30–14:20</td>
 	<td>Boris Fouotsa</td>
-	<td><a href="#boris">New adaptive attack on SIDH</a></td>
+	<td><a target="_self" href="#boris">New adaptive attack on SIDH</a></td>
       </tr>
       <tr>
 	<td>14:30–15:20</td>
 	<td>Yi-Fu Lai</td>
-	<td><a href="#yi-fu">Group Signatures and More from Isogenies
-	    (and Lattices:) Generic, Simple, and Efficient</a></td>
+	<td><a target="_self" href="#yi-fu">Group Signatures and More from Isogenies
+	    (and Lattices): Generic, Simple, and Efficient</a></td>
       </tr>
-      <tr>
+      <tr class="break">
 	<td colspan="3" class="center"><em>*coffee break*</em></td>
       </tr>
       <tr>
 	<td>15:50–16:40</td>
 	<td>Simon-Philipp Merz</td>
-	<td><a href="#simon">Cryptanalysis of an Oblivious PRF from Supersingular Isogenies</a></td>
+	<td><a target="_self" href="#simon">Cryptanalysis of an Oblivious PRF from Supersingular Isogenies</a></td>
       </tr>
     </table>
     
@@ -172,6 +174,15 @@
 
     <h3 id="faq">## FAQ</h3>
 
+    <h4>### Cool! How do I register?</h4>
+
+    <p>Just <a href="https://defeo.lu/">send me</a> an email.</p>
+
+    <h4>### Will this be a hybrid event? Will the presentations be
+      recorded?</h4>
+
+    <p>No.</p>
+    
     <h4>### How do I come to IBM?</h4>
 
     <p>From Zürich HB, take line S4 to Rüschlikon, then walk up the
@@ -179,6 +190,8 @@
 
     <p>From Zürich Bürkliplatz, take bus 165 to Rüschlikon, Säumerstrasse.</p>
 
+    <p><a href='https://www.sbb.ch/de/kaufen/pages/fahrplan/fahrplan.xhtml?suche=true&von=Zuerich HB&nach=Rueschlikon, Saeumerstrasse&datum=Do, 07.07.2022&zeit=10:45&an=true'>>>> Go to SBB search</a></p>
+	
     <h4>### What about lunch?</h4>
 
     <p>IBM has a cafeteria where everyone can have lunch. Prices are
@@ -186,5 +199,36 @@
 
     <h4>### I want to prepare for the seminars, are there any recommended readings?</h4>
 
-    <p>Glad you asked, here are some suggestions...</p>
+    <p>Glad you asked, here are some suggestions:</p>
+
+    <ul>
+      <li>Last
+	  year's <a href="https://isogenyschool2020.co.uk/schedule/">summer
+	  school on isogeny based cryptography</a> has lecture notes
+	  on many topics, in particular relating
+	  to <a href="https://www.hyperelliptic.org/tanja/teaching/isogeny-school21/">SIDH
+	  and CSIDH</a> and
+	  to <a href="https://homes.esat.kuleuven.be/~wbeullen/week4_1.pdf">Ward's
+	  presentation</a>.</li>
+      <li><a href="https://defeo.lu/wurzburg/wurzburg.pdf">These
+	  lecture notes</a> targeted at Masters students with a
+	  math/CS background are an updated version
+	  of <a href="https://arxiv.org/abs/1711.04062">arxiv:1711.04062</a>.</li>
+      <li>The "group action framework" is presented in many papers on
+	CSIDH. A particularly well written and up to date version can
+	be found in <a href="https://eprint.iacr.org/2022/770">this
+	paper</a>.</li>
+      <li>Here's
+	a <a href="https://eprint.iacr.org/2019/1321">tutorial on
+	SIDH</a> from the ground up, striving to do all computations
+	explicitly.</li>
+      <li>There
+	are <a href="https://www.youtube.com/watch?v=9B7jq7Mgiwc">some</a> <a href="https://www.youtube.com/watch?v=76WucnsbPeU">good</a>
+	<a href="https://www.youtube.com/playlist?list=PL6hzlGxGIS1Cnx3XS7ZD4wjcTmHqOEpTS">videos</a>
+	<a href="https://www.youtube.com/watch?v=EAe5dqWcxh4">on</a>
+	YouTube.</li>
+      <li>The papers that will be presented in the
+	afternoon: <a href="https://eprint.iacr.org/2021/1322">Boris'</a>, <a href="https://eprint.iacr.org/2021/1366">Yi-Fu's</a>
+	and <a href="https://eprint.iacr.org/2021/706">Simon's</a>.
+    </ul>
 </html>
