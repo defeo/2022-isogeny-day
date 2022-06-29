@@ -76,6 +76,7 @@
       <p><strong>**Thursday July 7, 2022, 11am–5pm**</strong></p>
       
       <address>
+	Room K247<br>
 	<a href="https://www.zurich.ibm.com/">IBM Research Switzerland</a><br>
 	Säumerstrasse 4, 8803 Rüschlikon<br>
 	<a target="_self" href="geo:47.30974,8.54530?z=17">47.30974,8.54530</a> – <a href="https://www.openstreetmap.org/?mlat=47.30974&mlon=8.54530#map=17/47.30974/8.54530&layers=T">See on a map</a>.
@@ -90,12 +91,12 @@
       <tr>
 	<td>11:05–11:45</td>
 	<td>Ward Beullens</td>
-	<td>Cryptographic group actions, CSIDH, CSI-FiSh</td>
+	<td><a target="_self" href="#ward">Cryptographic group actions, CSIDH, CSI-FiSh</a></td>
       </tr>
       <tr>
 	<td>11:50–12:30</td>
 	<td>Luca De Feo</td>
-	<td>Supersingular isogeny graphs, SIDH, etc.</td>
+	<td><a target="_self" href="#luca">Supersingular isogeny graphs, SIDH, etc.</a></td>
       </tr>
       <tr class="break">
 	<td colspan="3" class="center"><em>*lunch break*</em></td>
@@ -125,6 +126,46 @@
     
     <h3 id="abstracts">## Abstracts</h3>
 
+    <h4 id="ward"></h4>
+    
+    <h4 id="luca">Supersingular isogeny graphs, SIDH, etc.</h4>
+
+    <p>I will review the basic facts on the structure of the full
+      supersingular isogeny graph over 𝔽<sub>p²</sub>, as seen in SIDH
+      and many other isogeny based protocols.</p>
+
+    <p>I will then spend most of the time explaining what an "SIDH
+      square" in the isogeny graph is, an how to use it for key
+      exchange, signatures and more.</p>
+
+    <p>Finally, I will point to some active research areas in
+      isogeny-based cryptography.</p>
+    
+    <h4 id="boris">### New adaptive attack on SIDH</h4>
+
+    <p>The SIDH key exchange is the main building block of SIKE. In
+      2016, Galbraith et al. (GPST) presented an adaptive attack on
+      SIDH. In this attack, the malicious party manipulates the
+      torsion points in his public key in order to recover the honest
+      party's secret when having access to a key exchange oracle. In
+      2017, Petit designed a passive attack (which was improved by de
+      Quehen et al. in 2020) that exploits the torsion point
+      information available in SIDH public key to recover the secret
+      isogeny when the endomorphism ring of the starting curve is
+      known.</p>
+
+    <p>In this talk, we present a new adaptive attack on SIDH-type
+      schemes that uses torsion point attacks as subroutine.  Our
+      attack is different from the GPST adaptive attack in the sense
+      that the malicious party does not manipulate the torsion points
+      in his public key, but the degree of his secret isogeny. Using
+      his access to a key exchange oracle, he recovers the action of
+      Alice's secret isogeny on a larger torsion group.  This leads to
+      an imbalanced SIDH instance on which the improved torsion points
+      attacks run in polynomial time.</p>
+
+    <p>Joint work with Christophe Petit.</p>
+
     <h4 id="yi-fu">### Group Signatures and More from Isogenies (and
       Lattices): Generic, Simple, and Efficient</h4>
 
@@ -150,8 +191,6 @@
     <p>Joint work with Ward Beullens, Samuel Dobson, Shuichi Katsumata
       and Federico Pintore.</p>
 
-    <h4 id="boris">### New adaptive attack on SIDH</h4>
-
     <h4 id="simon">### Cryptanalysis of an Oblivious PRF from Supersingular Isogenies</h4>
 
     <p>We give a brief introduction on oblivious pseudorandom
@@ -169,6 +208,9 @@
       OPRF protocol to include some countermeasures, and present a
       second subexponential attack that succeeds in the presence of
       said countermeasures.</p>
+
+    <p>Joint work with Andrea Basso, Péter Kutas, Christophe Petit,
+      and Antonio Sanso.</p>
     
     <hr>
 
@@ -190,7 +232,7 @@
 
     <p>From Zürich Bürkliplatz, take bus 165 to Rüschlikon, Säumerstrasse.</p>
 
-    <p><a href='https://www.sbb.ch/de/kaufen/pages/fahrplan/fahrplan.xhtml?suche=true&von=Zuerich HB&nach=Rueschlikon, Saeumerstrasse&datum=Do, 07.07.2022&zeit=10:45&an=true'>>>> Go to SBB search</a></p>
+    <p><a href='https://www.sbb.ch/de/kaufen/pages/fahrplan/fahrplan.xhtml?suche=true&nach=Rueschlikon, Saeumerstrasse&datum=Do, 07.07.2022&zeit=10:45&an=true'>>>> Go to SBB search</a></p>
 	
     <h4>### What about lunch?</h4>
 
